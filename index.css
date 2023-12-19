@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .menu {
+        height: 100vh;
+        width: 150px;
+        background-color: #191718;
+        color: #FFF;
+        position: fixed;
+        top: 0;
+    }
+
+    .nav {
+        width: 150px;
+        z-index: 1;
+    }
+
+    .nav-menu {
+        height: 44px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav-menu:hover {
+        background-color: #5C5C5C;
+    }
+
+    .nav-menu span {
+        padding: 14px 16px 11px;
+    }
+
+    .nav-menu svg {
+        height: 3px;
+    }
+
+    .nav-close {
+        background-color: #5C5C5C;
+    }
+
+    #button-nav button {
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #191718;
+        color: #FFF;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 250px;
+        height: 98px;
+    }
+
+    .content-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        background-color: #EFEFEF;
+        padding: 0 20px;
+    }
+
+    .content-2 .title {
+        margin-top: 38px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .content-2 p {
+        text-align: center;
+        margin-bottom: 38px;
+    }
+
+    .ct3-item {
+        margin-bottom: 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .footer {
+        height: 79px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #DEDEDE;
+    }
+}
+
+/* Tablet  */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+/* Destop */
+@media only screen and (min-width : 1224px) {}
