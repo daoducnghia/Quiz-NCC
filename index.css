@@ -19,7 +19,7 @@ body {
 }
 
 /* Mobile */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 280px) and (max-device-width : 540px) {
     body {
         font-size: 16px;
     }
@@ -105,6 +105,10 @@ body {
         margin-bottom: 38px;
     }
 
+    .ct3-item-title {
+        margin-bottom: 18px;
+    }
+
     .ct3-item {
         margin-bottom: 38px;
         display: flex;
@@ -137,6 +141,7 @@ body {
 
     .footer {
         height: 79px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -191,6 +196,7 @@ body {
         gap: 30px;
         height: max-content;
         position: relative;
+        min-height: 100vh;
     }
 
     .content .logo {
@@ -224,25 +230,37 @@ body {
     .content-3 {
         display: flex;
         flex-direction: row;
-        gap: 50px;
-        margin: 0 129px calc(100vh - (100vh - 79px)) 129px;
+        gap: 10px;
+        margin: 0 20px 100px 20px;
+    }
+
+    .content-3 .ct3-item-title {
+        font-size: 24px;
+    }
+
+    .content-3 .ct3-item-para img {
+        float: left;
+        margin-right: 16px;
     }
 
     .footer {
         height: 79px;
-        margin-left: 150px;
+        width: 100%;
         border-top: 1px solid #DEDEDE;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: absolute;
+        bottom: 0;
     }
 
     .footer span {
-        margin-left: 129px;
+        margin-left: 20px;
+        color: #3E3E3E;
     }
 }
 
-/* Destop */
+/* Desktop */
 @media only screen and (min-width : 1224px) {
     body {
         position: relative;
@@ -330,6 +348,7 @@ body {
         gap: 50px;
         margin: 0 129px 129px;
     }
+
     .content-3 .ct3-item-title {
         font-size: 24px;
     }

@@ -7,9 +7,28 @@ function closeNav() {
   document.getElementById("button-nav").classList.remove("hidden");
 }
 
-var w = window.innerWidth;
-if (w > 480) {
-  document.getElementById("button-nav").classList.add("hidden");
-  document.getElementById("menu-item").classList.remove("hidden");
-  document.getElementById("item-close").classList.add("hidden");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  function handleWindowSize() {
+    var w = window.innerWidth;
+
+    var buttonNav = document.getElementById("button-nav");
+    var menuItem = document.getElementById("menu-item");
+    var itemClose = document.getElementById("item-close");
+
+    if (w > 540) {
+      buttonNav.classList.add("hidden");
+      menuItem.classList.remove("hidden");
+      itemClose.classList.add("hidden");
+    } else {
+      buttonNav.classList.remove("hidden");
+      menuItem.classList.add("hidden");
+      itemClose.classList.remove("hidden");
+    }
+  }
+
+  handleWindowSize();
+
+  window.addEventListener("resize", function () {
+    handleWindowSize();
+  });
+});
